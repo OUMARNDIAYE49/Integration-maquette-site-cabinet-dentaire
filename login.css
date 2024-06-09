@@ -1,0 +1,108 @@
+:root {
+    --primary: #007bff;
+    --lightprimary: #0056b3;
+    --white: #ffffff;
+    --silver: #bcbcbc9e;
+    --defaultlinkColor: #333;
+    --yellow: #ffd700;
+    --muted: #777777;
+    --whtebbg: #f8fafc;
+}
+body{
+     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+     overflow-x: hidden; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+}
+
+form{
+    
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    padding: 40px 0 40px 100px;
+    border-radius: 6px;
+    gap: 10px;
+    width: 35%;
+    height: 80vh;
+    border: 2px solid #0056b3;
+    
+}
+h2{
+    display: flex;
+    justify-content: center;
+    
+}
+input{
+    height: 48px;
+    border: 2px solid var(--silver);
+    border-radius: 5px;
+    padding-left: 10px;
+    width: 80%;
+}
+.btn{
+    display: flex;
+    
+}
+.pw p{
+    font-weight: bold;
+    
+   
+}
+.bouton button{
+    height: 50px;
+    background-color: var(--lightprimary);
+    border-radius: 5px;
+    width: 83%;
+    color: var(--white);
+    border: none;
+    font-size: 20px;
+    
+}
+.question{
+    display: flex;
+     justify-content: center; 
+     text-align: center;
+     align-items: center;
+     gap: 5px;
+     /* margin-top: 50px; */
+}
+.question a{
+    text-decoration: none;
+}
+form img{
+    width: 50px;
+    height: 30px;
+}
+
+
+@media (max-width: 800px) {
+    form{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    padding: 40px 0 40px 45px;
+    border-radius: 6px;
+    gap: 10px;
+    width: 60%;
+    height: 75vh;
+    border: 2px solid #0056b3;
+    margin-top: 10px;
+    justify-content: center;
+    }
+    .bouton button{
+        height: 40px;
+        background-color: var(--lightprimary);
+        border-radius: 5px;
+        width: 85%;
+        color: var(--white);
+        border: none;
+        font-size: 20px;
+        
+    }
+
+}
