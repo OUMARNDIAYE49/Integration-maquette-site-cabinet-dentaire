@@ -35,6 +35,8 @@ form{
 h2{
     display: flex;
     justify-content: center;
+    text-align: center;
+    padding-right: 100px;
     
 }
 input{
@@ -69,7 +71,7 @@ input{
      text-align: center;
      align-items: center;
      gap: 5px;
-     /* margin-top: 50px; */
+
 }
 .question a{
     text-decoration: none;
@@ -93,6 +95,7 @@ form img{
     border: 2px solid #0056b3;
     margin-top: 10px;
     justify-content: center;
+    
     }
     .bouton button{
         height: 40px;
@@ -102,6 +105,14 @@ form img{
         color: var(--white);
         border: none;
         font-size: 20px;
+        
+    }
+    form h2{
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        padding-left: 45px;
+
         
     }
 

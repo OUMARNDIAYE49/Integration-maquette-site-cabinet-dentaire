@@ -13,32 +13,33 @@
             <form action="formulaire">
                 <a href="index.html"><img src="image/bx-left-arrow-alt.svg" alt="image"></a>
                 <h2>Sign Up</h2>
-                <label for="name">Name</label>
-                <input type="text" name="your-name" id="first-name" placeholder="Name">
+                <label for="name">Name:</label>
+                <input type="text" name="name" pattern="[^0-9]*" id="name" placeholder="Name" required>
                 
-                <label for="email">Email</label>
-                <input type="text" name="your-email" id="mail" placeholder="Email">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Email" required>
                  
-                <label for="password">Password</label>
-                 <input type="text" name="your-password" id="passw" placeholder="Password">
+                <label for="password">Password:</label>
+                 <input type="password" name="password" id="password" placeholder="Password" required>
                 
-                <label for="confirmation">Confirmation</label>
-                <input type="text" name="confirmatio pass" id="password confirmation" placeholder="Confirmation">
+                <label for="confirmation">Confirmation:</label>
+                <input type="password" name="confirmation" id="confirmation" placeholder="Confirmation" required>
                 
 
                 <div class="btn">
-                    <input type="checkbox" id="check" name="ch" >
+                    <input type="checkbox" id="check" name="check" required>
                     <p class="reme">Agree to terms and condition</p>
                 </div>
                 <div class="bouton">
-                    <button>create account</button>
+                    <button>Create account</button>
                 </div>
                 <div class="question">
-                    <p>Already registre <h2><a href="login.html">Login?</a></h2></p>
+                    <p>Already registre <h3><a href="login.html">Login?</a></h3></p>
                 </div>
             </form>
         </div>
      </section>
-
+    
+<script src="page.js"></script> 
 </body>
 </html>

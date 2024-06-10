@@ -5,37 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site cabinet dentaire</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
-    <header class="header">
-      
-            <nav>
-                <img src="image/logo.png" alt="logo du site" />
-                <div id="home" class="logo">
-                    <ul class="navbar">
-                        <li><a href="#maison"> <span>Home</span></a></li>
-                        <li><a href="#visit">Services</a></li>
-                        <li><a href="#history">About us</a></li>
-                        <li><a href="#contact">Appoinment</a></li>
-                        <li><a href="signup.html">Sign Up</a></li>
-                        <li> <a href="login.html"><button class="login">Login</button></a></li>
-                    </ul>
-                    <div class="men" onclick=showretour()>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg>
-                    </div>
+    <header>
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><img src="image/close_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="close"></a></li>
+                <li><a href="#maison"> <span>Home</span></a></li>
+                <li><a href="#visit">Services</a></li>
+                <li><a href="#history">About Us</a></li>
+                <li><a href="#contact">Appointment</a></li>
+                <li><a href="signup.html">Signup</a></li>
+                <li><a href="login.html"><button>Login</button></a></li>
+                
+            </ul>
 
-                    <ul class="retour">
-                        <li onclick=hideretour()><a href="#"><img src="image/close_24dp_FILL0_wght400_GRAD0_opsz24.png" alt=" close"></a></li>
-                        <li><a href="#maison"> <span>Home</span></a></li>
-                        <li><a href="#visit">Services</a></li>
-                        <li><a href="#history">About us</a></li>
-                        <li><a href="#contact">Appoinment</a></li>
-                        <li><a href="signup.html">Sign Up</a></li>
-                        <li> <a href="login.html"><button class="login">Login</button></a></li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
+            <ul>
+                <li class="log"><a href="#logo"><img src="image/logo.png" alt="logo"></a></li>
+                <li class="hideOnMobile"><a href="#maison"> <span>Home</span></a></li>
+                <li class="hideOnMobile"><a href="#service">Services</a></li>
+                <li class="hideOnMobile"><a href="#history">About Us</a></li>
+                <li class="hideOnMobile"><a href="#contact">Appointment</a></li>
+                <li class="hideOnMobile"><a href="signup.html">Signup</a></li>
+                <li class="hideOnMobile"><a href="login.html"><button>Login</button></a></li>
+                <li class="menu-bar" onclick=showSidebar()><a href="#"><img src="image/menu-regular-24.png" alt="menu"></a></li>
+            </ul>
+        </nav>
+
+  </header>    
+
+    
     </header>
     
   
@@ -223,10 +223,10 @@
                     <div class="form1">
                         <div class="form2">
                             <label for="titre">Name</label>
-                            <input type="text" placeholder="Full name" name="titre" id="titre" required pattern="[A-Za-zÀ-ÖØ-öø-ÿ]+" title="Le nom d'utilisateur doit contenir uniquement des lettres.">
+                            <input type="text" placeholder="Full name" name="titre" id="titre" required pattern="[^0-9]*" title="Le nom d'utilisateur doit contenir uniquement des lettres.">
                         </div>
                         <div class="form2">
-                            <label for=phone">Phone</label>
+                            <label for="phone">Phone</label>
                             <input type="tel"  placeholder="+1 (588 456 487 459)" name="telephone" id="titre" required pattern="\d+" title="Le numéro de téléphone doit contenir uniquement des chiffres."/>
                         </div>
                     </div>    
@@ -272,17 +272,21 @@
     <div class="milieu">
        <div class="millieus">
             <h2>Subscribe to our newsletter</h2> 
-            <form action="input">
-                        <div class="first">
-                            <input type="text" id="na" name="name" placeholder="First name">
-                        </div>
-                        <div class="second first">
-                            <input type="text" id="sec" name="sec" placeholder="Email adress">
-                        </div>
+            <div>
+                <form action="input">
+                    <div class="first">
+                        <input type="text" id="na" name="name" placeholder="First name">
+                    </div>
+                    <div class="second first">
+                        <input type="text" id="sec" name="sec" placeholder="Email adress">
+                    </div>
+                    <div>
                         <div class="Subscribe first"> 
                             <button>Subscribe Now</button>
                         </div>
-            </form>
+                    </div>
+        </form>
+            </div>
        </div>
     </div>
     </div>
@@ -334,16 +338,8 @@
     </div>
 
 </section> 
-<script>
-function showretour (){
-    const retour =document.querySelector('.retour')
-    retour. style.dislay='flex'
-}
-function hideretour (){
-    const retour =document.querySelector('.retour')
-    retour. style.dislay='none'
-}
-</script>
-<script src="page.js"></script>
+
+
+<script src="page.js"></script> 
 </body>
 </html>

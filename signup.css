@@ -35,6 +35,9 @@ form{
 h2{
     display: flex;
     justify-content: center;
+    text-align:center;
+    align-items: center;
+    padding-right: 100px;
 }
 input{
     height: 48px;
@@ -104,6 +107,13 @@ form img{
         border: none;
         font-size: 20px;
         
+    }
+    h2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-left: 60px;
     }
 
 }
