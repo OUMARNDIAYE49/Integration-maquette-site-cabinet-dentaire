@@ -868,27 +868,34 @@ button{
     #rendvous{
         flex-direction: column;
         margin: auto;
-        height: 420px;
-        
+        height: 1000px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
     .rendvous-contenent{
         flex-direction: column;
         width: 90%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
     }
     .svr{
         flex-direction: column;
         
     }
-    .consultation {
+    .rendvous-contenent .consultation {
         width: 100%;
-        justify-content: space-between;
-       
-        
+       flex-direction: column;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+       margin-bottom: 60px;
     }
     
     .consultation .item {
-         width: 90px;
-        height: 100px; 
         justify-content: center;
         align-items: center;
         text-align: center;
